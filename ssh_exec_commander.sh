@@ -31,6 +31,8 @@ fi
 function f_set_serverlist() {
 if [ "${PARAM}" -eq "1" ]; then
   SERVERLIST=./serverlist_for_ssh_commander.txt
+elif [ "${PARAM}" -eq "2" ]; then
+  :
 else
   echo " Please enter your server listfile."
   echo " If nothing, will use ./serverlist_for_ssh_commander.txt"
